@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sindhu S | Projects</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Lottie CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.10.1/lottie.min.js"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">About</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="resume.pdf" download>Resume</a></li>
+    </ul>
+  </nav>
+
+  <!-- Projects Section -->
+  <div class="panel" id="projects">
+    <h2 class="glow-gradient">Projects</h2>
+
+    <!-- Project 1 -->
+    <div class="card project-card">
+      <div class="project-animation">
+        <div id="animation1" style="width:120px;height:120px;"></div>
+      </div>
+      <h3>Explainable Vision Transformer U-Net for Skin Lesion Segmentation</h3>
+      <p>
+        Developed a robust deep learning model combining ViT + U-Net for accurate skin lesion segmentation. Integrated EigenCAM for explainable outputs, improving trust for doctors in medical decision-making.
+      </p>
+      <ul>
+        <li>Transformer-based U-Net architecture for enhanced segmentation</li>
+        <li>Explainable AI with EigenCAM overlays</li>
+        <li>Outputs: Predicted Segmentation Mask, CAM Heatmap</li>
+        <li>Metrics: Dice Score & IoU</li>
+      </ul>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="card project-card">
+      <div class="project-animation">
+        <div id="animation2" style="width:120px;height:120px;"></div>
+      </div>
+      <h3>CEEMDAN + Ensemble Learning for Stock Market Forecasting</h3>
+      <p>
+        Designed a hybrid forecasting framework integrating CEEMDAN preprocessing with ensemble models (Random Forest, LightGBM, XGBoost) for robust multi-sector stock prediction.
+      </p>
+      <ul>
+        <li>Applied CEEMDAN decomposition for noise reduction</li>
+        <li>Achieved 99.79% accuracy on Electronic Arts</li>
+        <li>Compared RMSE, MAE, directional accuracy across models</li>
+      </ul>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="card project-card">
+      <div class="project-animation">
+        <div id="animation3" style="width:120px;height:120px;"></div>
+      </div>
+      <h3>Social Distancing Detector (YOLO + OpenCV)</h3>
+      <p>
+        Built a real-time social distancing detector using YOLO + OpenCV. Detected people, calculated distances, and flagged violations for pandemic prevention.
+      </p>
+      <ul>
+        <li>YOLO for real-time person detection</li>
+        <li>Euclidean distance measurement for spacing</li>
+        <li>Violation alerts for safety monitoring</li>
+      </ul>
+    </div>
+
+    <!-- Project 4 -->
+    <div class="card project-card">
+      <div class="project-animation">
+        <div id="animation4" style="width:120px;height:120px;"></div>
+      </div>
+      <h3>House Price Prediction (Machine Learning)</h3>
+      <p>
+        Developed a regression-based system to predict housing prices based on features like location, size, and nearby facilities.
+      </p>
+      <ul>
+        <li>Implemented Linear Regression</li>
+        <li>Analyzed real estate datasets</li>
+        <li>Enabled data-driven predictions for buyers & investors</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- Initialize Lottie animations -->
+  <script>
+    const animations = [
+      {id: "animation1", path: "https://assets1.lottiefiles.com/packages/lf20_jcikwtux.json"},
+      {id: "animation2", path: "https://assets7.lottiefiles.com/packages/lf20_tfb3estd.json"},
+      {id: "animation3", path: "https://assets10.lottiefiles.com/packages/lf20_wnqlfojb.json"},
+      {id: "animation4", path: "https://assets2.lottiefiles.com/packages/lf20_2LdLki.json"}
+    ];
+
+    animations.forEach(anim => {
+      lottie.loadAnimation({
+        container: document.getElementById(anim.id),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: anim.path
+      });
+    });
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

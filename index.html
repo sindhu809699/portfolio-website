@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sindhu S | About Me</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Lottie CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.10.1/lottie.min.js"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html" class="active">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="resume.pdf" download>Resume</a></li>
+    </ul>
+  </nav>
+  <!-- Hero Section -->
+<div class="hero">
+  <h1>S Sindhu</h1>
+  <p>AI/ML Engineer & Researcher | Deep Learning | Computer Vision | Explainable AI</p>
+</div>
+
+
+  <!-- About Me Section -->
+  <div class="panel" id="about">
+    <h2 class="glow-gradient">About Me</h2>
+    <div class="card about-card">
+      <div class="about-grid">
+        <!-- Left Column: Text -->
+        <div class="about-text">
+          <p>
+            Hi, I’m <strong>Sindhu S</strong> — an aspiring <strong>AI/ML Engineer & Researcher</strong>,
+            currently pursuing my Master of Engineering (CSE) at Government College of Engineering, Tirunelveli.
+          </p>
+          <p>
+            I build interpretable and impact-driven AI systems using <strong>Deep Learning, Computer Vision,
+            and Explainable AI</strong>. My work includes Vision Transformer + U-Net models for medical image
+            segmentation (EigenCAM explainability) and hybrid CEEMDAN + ensemble frameworks for financial
+            time-series forecasting.
+          </p>
+        </div>
+
+        <!-- Right Column: Lottie Animation -->
+        <div class="about-animation">
+          <div id="aboutAnimation" style="width:200px;height:200px;"></div>
+        </div>
+      </div>
+
+      <ul class="about-highlights">
+        <li><strong>Research & Publications:</strong> Journal publications on stock prediction and hybrid forecasting (IJPREMS, 2025).</li>
+        <li><strong>Industry & Internships:</strong> Engineer Trainee at Cognizant; ML Intern at SmartBridge (IBM collaboration).</li>
+        <li><strong>Tech Stack:</strong> Python, TensorFlow/Keras, PyTorch, Scikit-learn, CEEMDAN preprocessing, YOLO/OpenCV.</li>
+        <li><strong>Goal:</strong> Develop trustworthy AI for healthcare & finance — accurate & explainable models.</li>
+      </ul>
+
+      <p class="about-cta">
+        I’m open to research collaborations and AI/ML roles — 
+        <a href="mailto:sindhu809699@gmail.com">let’s connect</a>.
+      </p>
+    </div>
+  </div>
+
+  <!-- Initialize Lottie Animation -->
+  <script>
+    lottie.loadAnimation({
+      container: document.getElementById('aboutAnimation'),
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: 'https://assets2.lottiefiles.com/packages/lf20_1pxqjqps.json' // Replace with your preferred Lottie JSON
+    });
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>
